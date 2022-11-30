@@ -327,7 +327,7 @@ while game:
                     estado = 'jogo'
                     velocidade_y_dos_obstaculos = 2
                     tempo_inicial = time.time()
-                    mixer.music.play()
+                    #arrumar musica
         
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_LEFT and personagem.speedx < 40 and estado == 'jogo':
@@ -402,7 +402,7 @@ while game:
         if bquit.draw():
             pygame.quit()
 
-        mixer.music.stop()
+        #arrumar musica
 
     if estado == 'jogo':
         if (esquerda == False):
